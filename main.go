@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"./something"
+	"fmt"
 )
 
 type Person struct {
