@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/georgedrummond/learning-go/something"
+	"./something"
 )
 
 type Person struct {
