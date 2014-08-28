@@ -18,4 +18,5 @@ func main() {
 	me := Person{name: "George", age: 26}
 
 	fmt.Println(me.Welcome())
+	something.A()
 }

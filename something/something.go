@@ -3,7 +3,7 @@ package something
 import "fmt"
 
 func A() {
-	fmt.Println("Helo")
+	fmt.Println("Hello from subpackage")
 }
 
 func init() {
