@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/georgedrummond/learning-go",
+	"GoVersion": "go1.3",
+	"Deps": []
+}
