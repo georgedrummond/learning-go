@@ -1,7 +1,7 @@
 package pages
 
 import (
-	"./../security"
+	"github.com/georgedrummond/learning-go/security"
 	"testing"
 )
 

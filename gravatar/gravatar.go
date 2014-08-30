@@ -1,7 +1,7 @@
 package gravatar
 
 import (
-	"./../security"
+	"github.com/georgedrummond/learning-go/security"
 )
 
 func EmailUrl(email string) string {

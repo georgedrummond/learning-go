@@ -1,12 +1,12 @@
 package main
 
 import (
-	"./gravatar"
-	"./pages"
-	"./security"
-	"./something"
 	"encoding/json"
 	"fmt"
+	"github.com/georgedrummond/learning-go/gravatar"
+	"github.com/georgedrummond/learning-go/pages"
+	"github.com/georgedrummond/learning-go/security"
+	"github.com/georgedrummond/learning-go/something"
 )
 
 type Person struct {
