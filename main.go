@@ -6,7 +6,6 @@ import (
 	"github.com/georgedrummond/learning-go/gravatar"
 	"github.com/georgedrummond/learning-go/pages"
 	"github.com/georgedrummond/learning-go/security"
-	"github.com/georgedrummond/learning-go/something"
 )
 
 type Person struct {
@@ -30,8 +29,6 @@ func main() {
 	me := Person{Name: "George", Age: 26}
 
 	fmt.Println(me.Welcome())
-	something.A()
-	something.AAA()
 
 	secure_word := security.Hash("My word")
 	fmt.Printf("Hash is: %x\n", secure_word)
