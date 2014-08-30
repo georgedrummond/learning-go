@@ -6,19 +6,28 @@ import (
 	"./security"
 	"./something"
 	"fmt"
+  "encoding/json"
 )
 
 type Person struct {
-	name string
-	age  int
+	Name string
+	Age  int
 }
 
 func (p *Person) Welcome() string {
-	return fmt.Sprintf("Welcome %v! You are %v.", p.name, p.age)
+	return fmt.Sprintf("Welcome %v! You are %v.", p.Name, p.Age)
+}
+
+func (p *Person) ToJson() ([]byte, error) {
+	json, error := json.Marshal(p)
+
+  fmt.Println(string(json))
+
+  return json, error
 }
 
 func main() {
-	me := Person{name: "George", age: 26}
+	me := Person{Name: "George", Age: 26}
 
 	fmt.Println(me.Welcome())
 	something.A()
@@ -32,4 +41,10 @@ func main() {
 
 	gravatar_url := gravatar.EmailUrl("drummond@rentify.com")
 	fmt.Println(gravatar_url)
+
+  json, err := me.ToJson()
+
+  if err == nil {
+    fmt.Println(string(json))
+  }
 }
