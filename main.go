@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./gravatar"
 	"./pages"
 	"./security"
 	"./something"
@@ -28,4 +29,7 @@ func main() {
 
 	page := pages.Page()
 	fmt.Println(page)
+
+	gravatar_url := gravatar.EmailUrl("drummond@rentify.com")
+	fmt.Println(gravatar_url)
 }
