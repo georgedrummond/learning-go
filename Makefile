@@ -1,3 +1,5 @@
+default: build
+
 cleanup:
 	go clean
 	go fmt ./...

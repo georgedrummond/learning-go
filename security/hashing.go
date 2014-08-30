@@ -1,16 +1,16 @@
 package security
 
 import (
-	"crypto/sha256"
+	"crypto/md5"
 	"encoding/hex"
 	"io"
 )
 
 func Hash(word string) string {
-	h256 := sha256.New()
-	io.WriteString(h256, "This is my string to hash")
+	hash := md5.New()
+	io.WriteString(hash, word)
 
-	stringHash := hex.EncodeToString(h256.Sum(nil))
+	stringHash := hex.EncodeToString(hash.Sum(nil))
 
 	return stringHash
 }
