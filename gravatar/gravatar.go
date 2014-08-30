@@ -9,7 +9,5 @@ const (
 )
 
 func EmailUrl(email string) string {
-	hash := security.Hash(email)
-
-	return gravatar_base + hash
+	return gravatar_base + security.Hash(email)
 }
