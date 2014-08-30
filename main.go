@@ -22,10 +22,6 @@ func main() {
 	something.A()
 	something.AAA()
 
-	secure_word, err := security.Hash("My word")
-	if err != nil {
-		fmt.Println("Error")
-	} else {
-		fmt.Printf("Hash is: %x\n", secure_word)
-	}
+	secure_word := security.Hash("My word")
+	fmt.Printf("Hash is: %x\n", secure_word)
 }
