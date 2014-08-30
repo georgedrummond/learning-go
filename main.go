@@ -5,8 +5,8 @@ import (
 	"./pages"
 	"./security"
 	"./something"
+	"encoding/json"
 	"fmt"
-  "encoding/json"
 )
 
 type Person struct {
@@ -21,9 +21,9 @@ func (p *Person) Welcome() string {
 func (p *Person) ToJson() ([]byte, error) {
 	json, error := json.Marshal(p)
 
-  fmt.Println(string(json))
+	fmt.Println(string(json))
 
-  return json, error
+	return json, error
 }
 
 func main() {
@@ -42,9 +42,9 @@ func main() {
 	gravatar_url := gravatar.EmailUrl("drummond@rentify.com")
 	fmt.Println(gravatar_url)
 
-  json, err := me.ToJson()
+	json, err := me.ToJson()
 
-  if err == nil {
-    fmt.Println(string(json))
-  }
+	if err == nil {
+		fmt.Println(string(json))
+	}
 }
