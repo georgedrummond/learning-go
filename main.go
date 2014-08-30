@@ -39,8 +39,8 @@ func main() {
 	page := pages.Page()
 	fmt.Println(page)
 
-	gravatar_url := gravatar.EmailUrl("drummond@rentify.com")
-	fmt.Println(gravatar_url)
+	profile := gravatar.Profile{Email: "drummond@rentify.com"}
+	fmt.Println(profile.Url())
 
 	json, err := me.ToJson()
 
