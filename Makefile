@@ -1,8 +1,9 @@
-clean:
+cleanup:
+	go clean
 	go fmt ./...
 
-build: clean
+build: cleanup
 	go build
 
-test: clean
+test: cleanup
 	go test ./...

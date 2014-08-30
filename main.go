@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./security"
 	"./something"
 	"fmt"
 )
@@ -20,4 +21,11 @@ func main() {
 	fmt.Println(me.Welcome())
 	something.A()
 	something.AAA()
+
+	secure_word, err := security.Hash("My word")
+	if err != nil {
+		fmt.Println("Error")
+	} else {
+		fmt.Printf("Hash is: %x\n", secure_word)
+	}
 }
