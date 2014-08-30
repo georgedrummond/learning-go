@@ -1,5 +1,5 @@
 clean:
-	go fmt
+	go fmt ./...
 
 build: clean
 	go build
