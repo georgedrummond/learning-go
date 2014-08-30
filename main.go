@@ -19,5 +19,5 @@ func main() {
 
 	fmt.Println(me.Welcome())
 	something.A()
-  something.AAA()
+	something.AAA()
 }

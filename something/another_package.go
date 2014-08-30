@@ -1,9 +1,9 @@
 package something
 
-import(
-  "fmt"
+import (
+	"fmt"
 )
 
-func AAA(){
-  fmt.Println("~AAA~")
+func AAA() {
+	fmt.Println("~AAA~")
 }
