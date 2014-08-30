@@ -1,10 +1,10 @@
 package main
 
 import (
+	"./pages"
 	"./security"
 	"./something"
 	"fmt"
-  "./pages"
 )
 
 type Person struct {
@@ -26,6 +26,6 @@ func main() {
 	secure_word := security.Hash("My word")
 	fmt.Printf("Hash is: %x\n", secure_word)
 
-  page := pages.Page()
-  fmt.Println(page)
+	page := pages.Page()
+	fmt.Println(page)
 }
