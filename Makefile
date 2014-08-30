@@ -5,10 +5,10 @@ cleanup:
 	go fmt ./...
 
 build: cleanup
-	go build
+	godep go build
 
 test: cleanup
-	go test ./...
+	godep go test ./...
 
 run:
-	go run main.go
+	godep go run main.go
