@@ -9,3 +9,6 @@ build: cleanup
 
 test: cleanup
 	go test ./...
+
+run:
+	go run main.go
