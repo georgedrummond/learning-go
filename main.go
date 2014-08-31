@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/georgedrummond/learning-go/gravatar"
 	"github.com/georgedrummond/learning-go/pages"
+	"github.com/georgedrummond/learning-go/peer"
 	"github.com/georgedrummond/learning-go/security"
 )
 
@@ -45,5 +46,6 @@ func main() {
 		fmt.Println(string(json))
 	}
 
+	peer.StableList()
 	security.Blah()
 }
