@@ -8,6 +8,7 @@ build: cleanup
 	godep go build
 
 test: cleanup
+	rm ./learning-go
 	godep go test ./...
 
 run:
